@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приказ об отчислении № 142-ОД — Официальный портал</title>
+    <style>
+        :root {
+            --primary-color: #1a4b8c;
+            --text-color: #333333;
+            --bg-color: #f4f6f9;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Шапка сайта */
+        .site-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-placeholder {
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header-text p {
+            margin: 2px 0 0 0;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Навигация */
+        .nav-bar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+        }
+
+        .breadcrumbs {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        /* Основной контент (Сам приказ) */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .print-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #f8f9fa;
+            border: 1px solid var(--border-color);
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #555;
+            transition: 0.2s;
+        }
+
+        .print-btn:hover {
+            background: #e2e6ea;
+        }
+
+        .ministry-header {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .document-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 40px 0 20px;
+        }
+
+        .document-meta {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--text-color);
+            padding-bottom: 10px;
+        }
+
+        .preamble {
+            text-indent: 30px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .order-word {
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 30px 0;
+        }
+
+        /* Таблица отчисленных */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid var(--text-color);
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td:nth-child(1), td:nth-child(3), td:nth-child(4) {
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+        }
+
+        /* Подписи */
+        .signatures {
+            margin-top: 50px;
+        }
+
+        .signature-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .stamp-container {
+            position: relative;
+        }
+
+        .digital-stamp {
+            border: 2px solid #0056b3;
+            color: #0056b3;
+            padding: 10px;
+            font-size: 11px;
+            border-radius: 5px;
+            width: 250px;
+            background: rgba(0, 86, 179, 0.03);
+            margin-top: 20px;
+        }
+
+        .digital-stamp strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        /* Футер */
+        .site-footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            font-size: 12px;
+            margin-top: 40px;
+            background-color: #e9ecef;
+        }
+
+        @media print {
+            body { background: white; }
+            .site-header, .nav-bar, .site-footer, .print-btn { display: none; }
+            .container { box-shadow: none; padding: 0; margin: 0; width: 100%; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Официальная шапка портала -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo-placeholder">РФ</div>
+            <div class="header-text">
+                <h1>Министерство науки и высшего образования Российской Федерации</h1>
+                <p>Единая информационная система электронного документооборота ВУЗов</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Строка навигации -->
+    <div class="nav-bar">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a> / <a href="#">Документы и приказы</a> / <a href="#">Учебно-методическое управление</a> / <span>Приказ № 142-ОД</span>
+        </div>
+    </div>
+
+    <!-- Сам документ -->
+    <div class="container">
+        <button class="print-btn" onclick="window.print()">🖨 Печать документа</button>
+
+        <div class="ministry-header">
+            МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
+            Федеральное государственное автономное образовательное учреждение высшего образования<br>
+            «ГОСУДАРСТВЕННЫЙ НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ»
+        </div>
+
+        <div class="document-title">
+            ПРИКАЗ
+        </div>
+
+        <div class="document-meta">
+            <span id="current-date"></span>
+            <span>№ 142-ОД</span>
+        </div>
+
+        <div style="font-weight: bold; margin-bottom: 20px;">
+            Об отчислении обучающихся
+        </div>
+
+        <div class="preamble">
+            В соответствии с пунктом 4 статьи 43 Федерального закона от 29.12.2012 № 273-ФЗ «Об образовании в Российской Федерации», Уставом университета, Положением о текущем контроле успеваемости и промежуточной аттестации обучающихся, а также в связи с невыполнением обязанностей по добросовестному освоению образовательной программы и выполнению учебного плана,
+        </div>
+
+        <div class="order-word">ПРИКАЗЫВАЮ:</div>
+
+        <div class="preamble">
+            1. Отчислить из университета нижеперечисленных обучающихся за академическую неуспеваемость (наличие трех и более академических задолженностей) и расторгнуть договоры об оказании платных образовательных услуг (при наличии):
+        </div>
+
+        <!-- ТАБЛИЦА С ИМЕНАМИ. МЕНЯЙТЕ ИМЕНА ЗДЕСЬ ДЛЯ ПРАНКА -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 5%;">№</th>
+                    <th style="width: 35%;">ФИО обучающегося</th>
+                    <th style="width: 10%;">Курс</th>
+                    <th style="width: 15%;">Группа</th>
+                    <th style="width: 35%;">Основание для отчисления</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Смирнов Александр Игоревич</strong></td>
+                    <td>2</td>
+                    <td>ПИ-221</td>
+                    <td>Академическая задолженность по 4 дисциплинам. Представление декана от 03.03.2026 № 45/УМУ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Иванова Екатерина Сергеевна</strong></td>
+                    <td>3</td>
+                    <td>ЭК-310</td>
+                    <td>Утрата связи с университетом (непосещение занятий более 30 дней без уважительной причины)</td>
+                </tr>
+                <!-- Строка с выделением для бОльшего эффекта -->
+                <tr class="highlight">
+                    <td>3</td>
+                    <!-- ВОТ ТУТ ВПИШИ ИМЯ ЖЕРТВЫ ПРАНКА -->
+                    <td><strong>Тут впиши ФИО своего друга</strong></td>
+                    <td>2</td>
+                    <td>ПИ-221</td>
+                    <td>Систематическое невыполнение учебного плана, наличие задолженностей по профильным дисциплинам (Высшая математика, Программирование)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Васильев Дмитрий Андреевич</strong></td>
+                    <td>1</td>
+                    <td>ЮР-105</td>
+                    <td>Непрохождение промежуточной аттестации в установленные сроки</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Кузнецова Анна Павловна</strong></td>
+                    <td>4</td>
+                    <td>МН-402</td>
+                    <td>Нарушение условий договора об оказании платных образовательных услуг (неуплата)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="preamble">
+            2. Бухгалтерии произвести расчет со студентами, обучающимися на коммерческой основе, в соответствии с условиями договора.<br>
+            3. Дирекции студенческого городка (общежития) в трехдневный срок расторгнуть договоры найма жилого помещения с лицами, указанными в п.1 настоящего приказа.<br>
+            4. Контроль за исполнением настоящего приказа возложить на проректора по учебной работе.
+        </div>
+
+        <div class="signatures">
+            <div class="signature-row">
+                <div><strong>Ректор университета</strong></div>
+                <div>_________________ / А.В. Воронцов /</div>
+            </div>
+            
+            <div class="signature-row" style="margin-top: 40px; font-size: 14px;">
+                <div>Проект вносит:<br>Декан факультета</div>
+                <div><br>_________________ / С.Н. Михайлов /</div>
+            </div>
+        </div>
+
+        <!-- Имитация цифровой подписи ГОСТ -->
+        <div class="digital-stamp">
+            <strong>ДОКУМЕНТ ПОДПИСАН ЭЛЕКТРОННОЙ ПОДПИСЬЮ</strong>
+            Сертификат: 4B8D9C0081A2E3F411C6B89A7B654321<br>
+            Владелец: Воронцов Алексей Викторович (Ректор)<br>
+            Действителен: с 12.01.2025 по 12.01.2027<br>
+            Дата подписи: <span id="sign-date"></span>
+        </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        © 2026 Министерство науки и высшего образования Российской Федерации.<br>
+        Официальный портал публикации нормативных актов образовательных учреждений.<br>
+        Все документы, размещенные на портале, имеют юридическую силу согласно ФЗ №63 "Об электронной подписи".
+    </footer>
+
+    <!-- Скрипт для автоматической генерации свежих дат (чтобы выглядело актуально) -->
+    <script>
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        
+        // Форматируем дату типа "5 марта 2026 г."
+        document.getElementById('current-date').textContent = «от » + today.toLocaleDateString('ru-RU', options);
+        
+        // Форматируем дату типа "05.03.2026 14:32:01"
+        const signDateStr = today.toLocaleDateString('ru-RU') + ' ' + today.toLocaleTimeString('ru-RU');
+        document.getElementById('sign-date').textContent = signDateStr;
+    </script>
+</body>
+</html>
